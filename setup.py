@@ -1,15 +1,9 @@
-  from setuptools import setup, find_packages
+#!/usr/bin/env python
 
-  try:
-      from pip._internal import main as pip_main
-  except:
-      from pip import main as pip_main
+from setuptools import setup, find_packages
 
-  pip_main(['install', '--upgrade', ''git+https:github.com/Luaithrenn/MultiplyBySix@'')
-
-  setup(
+setup(
     name='MultiplyBySix',
     version='1.0',
-    packages=find_packages(),
-    dependency_links=['git+https:github.com/ibm-watson-iot/functions.git@']
-    )
+    packages=find_packages()
+)
